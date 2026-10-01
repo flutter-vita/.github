@@ -8,8 +8,8 @@ change.
 |---|---|
 | ![Wonderous on a PS Vita, with the debug strip across the top](images/wonderous.png) | ![LocalSend on a PS Vita](images/localsend.png) |
 | **Wonderous**, an app we did not write, at 60 fps. The debug strip across the top shows the live numbers. | **LocalSend**, file transfer over the local network. We did not write it either. |
-| ![The gallery's widget panel on a PS Vita](images/gallery.png) | ![The receiver's deploy log on a PS Vita](images/receiver.png) |
-| **The gallery**: widgets, benchmark scenes and hardware checks. | **The receiver** installs your app over Wi-Fi and keeps its logs. |
+| ![The gallery's widget panel on a PS Vita](images/gallery.png) | ![The bridge's list of installed apps on a PS Vita](images/bridge.png) |
+| **The gallery**: widgets, tests and hardware checks. | **The bridge** installs your app over Wi-Fi and keeps its logs. |
 
 ## Quick start
 
@@ -26,11 +26,11 @@ flutter-vita doctor
 flutter-vita run samples/gallery
 ```
 
-Before the first run, install the receiver on the console. You do this one
+Before the first run, install the bridge on the console. You do this one
 time, with VitaShell. The full steps:
 
 1. [Install the toolchain](https://github.com/flutter-vita/flutter-vita/blob/master/docs/install-macos.md) (macOS) or [on Linux](https://github.com/flutter-vita/flutter-vita/blob/master/docs/install-linux.md).
-2. [Set up the console](https://github.com/flutter-vita/flutter-vita/blob/master/docs/configure-console.md): homebrew, the shader compiler, the receiver.
+2. [Set up the console](https://github.com/flutter-vita/flutter-vita/blob/master/docs/configure-console.md): homebrew, the shader compiler, the bridge.
 3. [Get started](https://github.com/flutter-vita/flutter-vita/blob/master/docs/get-started.md): the gallery, then your own app.
 
 ## How it works
@@ -39,14 +39,14 @@ time, with VitaShell. The full steps:
 
 On your Mac, the build compiles your app and the Flutter framework to ARMv7
 machine code. It links that code with the prebuilt engine, the embedder and
-the GLES2 layer into one `.vpk`. The receiver on the console installs the
+the GLES2 layer into one `.vpk`. The bridge on the console installs the
 `.vpk` and starts it.
 
 ## Repositories
 
 | Repository | What it is | Why it exists |
 |---|---|---|
-| [flutter-vita](https://github.com/flutter-vita/flutter-vita) | The tool: `flutter-vita build`, `install`, `run`, `logs`. Also the receiver, the GLES2 layer, the Vita implementations of twelve plugins, the samples and the docs. **Start here.** | This is the part you use. You build, install, run and debug your app from here. |
+| [flutter-vita](https://github.com/flutter-vita/flutter-vita) | The tool: `flutter-vita build`, `install`, `run`, `logs`. Also the bridge, the GLES2 layer, the Vita implementations of twelve plugins, the samples and the docs. **Start here.** | This is the part you use. You build, install, run and debug your app from here. |
 | [flutter](https://github.com/flutter-vita/flutter) | Our fork of Flutter, branch `vita-3.44.8`. Its releases carry the prebuilt engine. | The engine does not run on the console without these changes. The prebuilt engine saves you a 12 GB checkout and a long build. |
 | [flutter-vita-embedder](https://github.com/flutter-vita/flutter-vita-embedder) | The `main()` of every app. It starts the engine, reads touch, buttons and the keyboard, puts each frame on the screen, and runs the dev server and the debug strip. | Each Flutter platform has an embedder, and this is the one for the Vita. Every app build compiles it from source, so a fix in it needs no new engine. |
 | [flutter-vita-packages](https://github.com/flutter-vita/flutter-vita-packages) | Our pub packages: `flutter_vita`, `vita_debug_strip`, `vita_file_browser`. | Your app adds them to `pubspec.yaml` like any other package. `flutter_vita` sets up the app for the console with one call in `main()`. |
