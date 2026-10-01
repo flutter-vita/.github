@@ -14,8 +14,8 @@ change.
 ## Quick start
 
 You need a PS Vita with HENkaku or h-encore² (firmware 3.60 to 3.74), a Mac
-with Apple silicon, VitaSDK, and Flutter 3.44.8. A normal Flutter install is
-correct: our fork changes only the engine, and the engine comes prebuilt.
+with Apple silicon, and VitaSDK. You do not install Flutter: the first
+`flutter-vita` command downloads Flutter 3.44.8 for the tool's own use.
 
 ```sh
 git clone --recurse-submodules https://github.com/flutter-vita/flutter-vita
