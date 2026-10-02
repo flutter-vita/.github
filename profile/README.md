@@ -29,9 +29,9 @@ flutter-vita run samples/gallery
 Before the first run, install the bridge on the console. You do this one
 time, with VitaShell. The full steps:
 
-1. [Install the toolchain](https://github.com/flutter-vita/flutter-vita/blob/main/docs/install-macos.md) (macOS) or [on Linux](https://github.com/flutter-vita/flutter-vita/blob/main/docs/install-linux.md).
-2. [Set up the console](https://github.com/flutter-vita/flutter-vita/blob/main/docs/configure-console.md): homebrew, the shader compiler, the bridge.
-3. [Get started](https://github.com/flutter-vita/flutter-vita/blob/main/docs/get-started.md): the gallery, then your own app.
+1. [Install the toolchain](https://github.com/flutter-vita/flutter-vita/blob/master/docs/install-macos.md) (macOS) or [on Linux](https://github.com/flutter-vita/flutter-vita/blob/master/docs/install-linux.md).
+2. [Set up the console](https://github.com/flutter-vita/flutter-vita/blob/master/docs/configure-console.md): homebrew, the shader compiler, the bridge.
+3. [Get started](https://github.com/flutter-vita/flutter-vita/blob/master/docs/get-started.md): the gallery, then your own app.
 
 ## How it works
 
