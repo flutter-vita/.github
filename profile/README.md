@@ -12,8 +12,9 @@ console's GPU. Your `main.dart` does not change.
 | [flutter-vita-packages](https://github.com/flutter-vita/flutter-vita-packages) | Our pub packages. `flutter_vita` sets up an app for the console with one call in `main()`. |
 | [flutter-vita-bench](https://github.com/flutter-vita/flutter-vita-bench) | The benchmark: a Flutter app with 36 scenes. It shows which scenes become slower after a change to the engine, the GLES2 layer or the embedder. |
 
-The other repositories are forks: the libraries that the engine uses, and the
-apps that we test with. [The list](https://github.com/flutter-vita/flutter-vita#the-changes-this-port-makes-to-other-projects).
+The other repositories are forks:
+[the libraries that the engine uses](https://github.com/flutter-vita/flutter-vita/blob/master/docs/engine.md)
+and [the apps that we test with](https://github.com/flutter-vita/flutter-vita/blob/master/samples/README.md).
 
 *PlayStation and PS Vita are trademarks of Sony Interactive Entertainment.
 This project is not affiliated with or endorsed by Sony.*
