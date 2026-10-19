@@ -1,3 +1,5 @@
+<p align="center"><img src="images/readme-banner.png" alt="flutter-vita" width="600"></p>
+
 # Flutter for the PlayStation Vita
 
 flutter-vita builds Flutter apps for the PS Vita. It compiles the Flutter
