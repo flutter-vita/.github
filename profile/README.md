@@ -1,4 +1,9 @@
-<p align="center"><img src="images/readme-banner.png" alt="flutter-vita" width="600"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/readme-banner-dark.png">
+    <img src="images/readme-banner-light.png" alt="flutter-vita" width="420">
+  </picture>
+</p>
 
 # Flutter for the PlayStation Vita
 
